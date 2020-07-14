@@ -1,3 +1,9 @@
+* {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
 .landing-page-image img {
    height: 700px;
 }
@@ -14,6 +20,9 @@
    background: #FFE4BC;
    margin-top: 5rem;
    padding-bottom: 5rem;
+}
+section {
+   width: 100%;
 }
 .section-header {
    padding: 5rem;
@@ -36,4 +45,23 @@
  .dot-group {
    text-align: center;
    margin-top: 3rem;
+}
+@media screen and (max-width: 540px) {
+   .landing-page-image img  {
+      width: 540px;
+      height: 500px;
+   }
+   .Painting-style img {
+      width:  80px;
+      height: 70px;
+   }
+   h2 {
+      font-size: 18px;
+   }
+   .section-header {
+      padding: 2rem;
+   }
+   .container-styling-2 {
+      padding-bottom: 2rem;
+   }
 }
