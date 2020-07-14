@@ -1,0 +1,39 @@
+.landing-page-image img {
+   height: 700px;
+}
+.Painting-style img {
+   width:300px;
+   height: 300px;
+   padding: 10px;
+}
+.container-styling {
+   background: #FFE4BC;
+   padding-bottom: 5rem;
+}
+.container-styling-2 {
+   background: #FFE4BC;
+   margin-top: 5rem;
+   padding-bottom: 5rem;
+}
+.section-header {
+   padding: 5rem;
+}
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 10px;
+   width: 10px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ .dot-group {
+   text-align: center;
+   margin-top: 3rem;
+}
