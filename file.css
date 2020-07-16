@@ -4,6 +4,17 @@
    overflow-x: hidden;
    font-family: "Montserrat";
 }
+h2, h3 {
+   color: white;
+   padding-bottom: 5rem;
+}
+h3 {
+   padding: 3rem;
+}
+.paragraphs {
+   color: white;
+   letter-spacing: 0.5px;
+}
 .logo {
    font-size: 24px;
    color: #27AE60;
@@ -31,12 +42,12 @@
  }
 .landing-page-image img {
    height: 700px;
+   width: fit-content;
 }
 .landing-page-caption {
    width: 100%;
    position: absolute;
-   top: 60%;
-   transform: translateY(-50%);
+   top: 20%;
    text-align: center;
    color: white;
 }
@@ -54,8 +65,11 @@
     margin-left: 45rem;
     background: white;
     padding: 3rem;
-    color: #4F4F4F;
+    color: hsl(0, 0%, 31%);
 } 
+.agreement {
+   padding-top: 1rem;
+}
  .sign-up-button {
     width: 20rem;
 }
@@ -75,13 +89,27 @@
    width: 80%;
    font-size: 20px;
 }
- .About-img img {
+ .phone-img img {
     width: 200px;
     height: 450px;
     margin-left: 10rem;
 }
  .about-paragraph {
     margin-left: -15rem;
+}
+.container-styling-2 {
+   background: #27AE60;
+   margin-top: 3rem;
+   padding: 5rem;
+}
+.section-start {
+   padding-top: 7rem;
+}
+.make-suggestions-on {
+   padding-left: 25px;
+}
+.options {
+   padding-left: 50px;
 }
  /* The dots/bullets/indicators */
  .dot {
@@ -110,12 +138,8 @@
    .sign-up {
       margin-left: 0rem;
    }
-   .Painting-style img {
-      width:  80px;
-      height: 70px;
-   }
    h2 {
-      font-size: 18px;
+      font-size: 32px;
    }
    .section-header {
       padding: 2rem;
@@ -123,16 +147,34 @@
    .container-styling-2 {
       padding-bottom: 2rem;
    }
-   .About-img img {
+   .phone-img img {
       margin-left: 0rem ;
    }
    .about-paragraph {
       margin-left: 0rem; 
+      padding-top: 3rem;
   }
   .about-paragraph > p {
       width: 100%;
+      font-size: 18px;
+      padding-top: 3rem;
   }
-  .Section-head {
-     font-size: 40px;
+  .Section-head{
+     font-size: 32px;
+     display: contents;
   }
+
+  .container-styling {
+     padding: 3rem;
+     text-align: center;
+  }
+  .container-styling-2 {
+     padding: 3rem;
+     text-align: center;
+  }
+  .make-suggestions-on {
+      padding-left: 0;
+}
+   .options {
+      padding-left: 0;
 }
