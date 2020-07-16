@@ -3,6 +3,7 @@
    padding: 0;
    overflow-x: hidden;
    font-family: "Montserrat";
+   box-sizing: border-box;
 }
 h2, h3 {
    color: white;
@@ -19,26 +20,16 @@ h3 {
    font-size: 24px;
    color: #27AE60;
 }
-.nav-link {
-   font-size: 18px;
+.logo:hover {
+   color: #27AE60;
+   text-decoration: none;
 }
 .active-cyan-4 input[type=text] {
-   border: 1px solid #007BFF;
-   box-shadow: 0 1px 0 0 #007BFF;
-   /* color: #BCD7FF; */
- }
- .active-cyan-4,  .fa {
-   /* color: #BCD7FF; */
- }
- ::placeholder {
-   color: #007BFF;
-   opacity: 1;
- }
- :-ms-input-placeholder {
-   color: #BCD7FF;
+   border: 1px solid #27AE60;
+   box-shadow: 0 1px 0 0 #27AE60;
  }
  .sign-up {
-    margin-left: 30rem;
+   margin-left: 30rem;
  }
 .landing-page-image img {
    height: 700px;
@@ -47,13 +38,16 @@ h3 {
 .landing-page-caption {
    width: 100%;
    position: absolute;
-   top: 20%;
+   top: 10%;
    text-align: center;
    color: white;
 }
  .landing-page-image {
     padding-bottom: 5rem;
     border-bottom: 2px solid #C4C4C4;
+}
+.image-wrapper {
+   position: relative;
 }
  .caption {
     padding: 2rem;
@@ -111,6 +105,32 @@ h3 {
 .options {
    padding-left: 50px;
 }
+.clients-feedback {
+   margin-top: 3rem;
+   border-top: 1px solid #27AE60;
+   border-bottom: 1px solid #27AE60;
+   padding: 3rem 0;
+}
+.customer img {
+   width: 300px;
+   height: 400px;
+}
+
+.feedback-container {
+   width: 100%;
+   background: #27AE60;
+   padding: 3rem;
+   color: white;
+   margin-top: 5rem;
+}
+h4 {
+   font-size: 24px;
+   font-weight: 600;
+}
+.customer-feedback {
+   padding-top: 2rem;
+   font-style: italic;
+}
  /* The dots/bullets/indicators */
  .dot {
    cursor: pointer;
@@ -124,13 +144,54 @@ h3 {
 }
  
  .active, .dot:hover {
-   background-color: #717171;
+   background-color: #27AE60;
 }
  .dot-group {
    text-align: center;
    margin-top: 3rem;
 }
+.footer {
+   background: #27AE60;
+   color: white;
+   padding: 3rem;
+   margin-top: 5rem;
+}
+.footer img {
+   width: 12rem;
+   height: 3rem;
+   margin-bottom: 3rem;
+}
+.footer-header {
+   font-weight: 600;
+   font-size: 20px;
+}
+.copyright {
+   padding-top: 2rem;
+   font-size: 14px;
+}
+.fa-social-media {
+   color: white;
+   padding: 1rem;
+   float: right;
+}
+
 @media screen and (max-width: 540px) {
+   h1 {
+      font-size: 24px;
+   }
+   .caption {
+      font-size: 18px;
+   }
+   .container-styling img {
+      margin-top: 5rem;
+   }
+   .form{
+      margin-left: 0rem;
+      width: inherit;
+   }
+   .sign-up-button {
+      width: inherit;
+   }
    .landing-page-image img  {
       width: 540px;
       height: 500px;
@@ -174,7 +235,16 @@ h3 {
   }
   .make-suggestions-on {
       padding-left: 0;
-}
+   }
    .options {
       padding-left: 0;
+   }
+   .social-media-icon{
+      float: none;
+      display: flex;
+      justify-content: center;
+   }
+   .feedback-comment {
+      margin-bottom: 3rem;
+   }
 }
