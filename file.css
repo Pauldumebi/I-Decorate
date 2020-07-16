@@ -183,7 +183,7 @@ h4 {
       font-size: 18px;
    }
    .container-styling img {
-      margin-top: 5rem;
+      /* margin-top: 5rem; */
    }
    .form{
       margin-left: 0rem;
@@ -194,7 +194,7 @@ h4 {
    }
    .landing-page-image img  {
       width: 540px;
-      height: 500px;
+      height: 630px;
    }
    .sign-up {
       margin-left: 0rem;
