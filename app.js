@@ -7,7 +7,7 @@ var tl = gsap.timeline({defaults: {duration: 1}})
       .to(rule, {duration: 1.8, cssRule: {scaleY:0}}, "-=1-5")
       .from(".phone-img", {backgroundPosition: '200px 0px', opacity: 0}, "-=1-5")
       .from(".form", {y: 10, opacity: 0}, "-=1")
-      .from(".phone-img", {y: 0, opacity: 0}, "-=1")
+    //   .from(".phone-img", {y: 0, opacity: 0}, "-=1")
 
      
 var scrollpos = window.scrollY; // window scroll position
