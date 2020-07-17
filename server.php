@@ -5,7 +5,7 @@
    $errors = array();
 
    // Create database connection
-   $db = mysqli_connect('us-cdbr-east-02.cleardb.com', 'bb7b99c03aee0c', '047cdfe2', 'heroku_446a8f42983d1cf');
+   $db = mysqli_connect('us-cdbr-east-02.cleardb.com', 'b62057634c9ea1', '808fc61c', 'heroku_7ef31c3ce21c275');
    
    // Check connection
    if ($db->connect_error) {
