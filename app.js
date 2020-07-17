@@ -1,60 +1,13 @@
-var index = 0;
-show();
-function show() {
-  var i;
-  var slides=document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for(i=0;i<slides.length;i++) {
-    slides[i].style.display="none"
-  }
-  index=index+1;
-  if(index>slides.length) {
-    index=1;
-  };
-  for (i=0;i<dots.length;i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index-1].style.display="block";
-  dots[index-1].className += " active";
-  setTimeout(show,2500);
-}
-var index = 0;
-show();
-function show() {
-  var i;
-  var slides=document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("dot");
-  for(i=0;i<slides.length;i++) {
-    slides[i].style.display="none"
-  }
-  index=index+1;
-  if(index>slides.length) {
-    index=1;
-  };
-  for (i=0;i<dots.length;i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index-1].style.display="block";
-  dots[index-1].className += " active";
-  setTimeout(show,2500);
-}
-var index = 0;
-show();
-function show() {
-  var i;
-  var slides=document.getElementsByClassName("mySlides3");
-  var dots = document.getElementsByClassName("dot");
-  for(i=0;i<slides.length;i++) {
-    slides[i].style.display="none"
-  }
-  index=index+1;
-  if(index>slides.length) {
-    index=1;
-  };
-  for (i=0;i<dots.length;i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index-1].style.display="block";
-  dots[index-1].className += " active";
-  setTimeout(show,2500);
-}
+var rule = CSSRulePlugin.getRule("span:after");
+
+var tl = gsap.timeline({defaults: {duration: 1}})
+   tl.from(".landing-page-header", {y: -50, stagger: 0.6, opacity: 0})
+      .to(rule, {duration: 1, cssRule: {scaleY:0}}, "-=1-5")
+   tl.from(".caption", {y: -30, stagger: 0.6, opacity: 0})
+      .to(rule, {duration: 1.8, cssRule: {scaleY:0}}, "-=1-5")
+      .from(".phone-img", {backgroundPosition: '200px 0px', opacity: 0}, "-=1-5")
+      .from(".form", {y: 10, opacity: 0}, "-=1")
+
+      // document.getElementById('cta').addEventListener('click', function () {
+      //   tl.reversed() ? tl.play() : tl.reverse() 
+      // })
