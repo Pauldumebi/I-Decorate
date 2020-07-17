@@ -43,29 +43,29 @@ h3 {
    color: white;
 }
  .landing-page-image {
-    padding-bottom: 5rem;
-    border-bottom: 2px solid #C4C4C4;
+   padding-bottom: 5rem;
+   border-bottom: 2px solid #C4C4C4;
 }
 .image-wrapper {
    position: relative;
 }
  .caption {
-    padding: 2rem;
-    font-size: 25px;
-    letter-spacing: 1px;
+   padding: 2rem;
+   font-size: 25px;
+   letter-spacing: 1px;
 }
  .form {
-    width: 26rem;
-    margin-left: 45rem;
-    background: white;
-    padding: 3rem;
-    color: hsl(0, 0%, 31%);
+   width: 26rem;
+   margin-left: 45rem;
+   background: white;
+   padding: 3rem;
+   color: hsl(0, 0%, 31%);
 } 
 .agreement {
    padding-top: 1rem;
 }
  .sign-up-button {
-    width: 20rem;
+   width: 20rem;
 }
 .container-styling {
    margin-top: 3rem;
@@ -84,12 +84,12 @@ h3 {
    font-size: 20px;
 }
  .phone-img img {
-    width: 200px;
-    height: 450px;
-    margin-left: 10rem;
+   width: 200px;
+   height: 450px;
+   margin-left: 10rem;
 }
  .about-paragraph {
-    margin-left: -15rem;
+   margin-left: -15rem;
 }
 .container-styling-2 {
    background: #27AE60;
@@ -153,7 +153,24 @@ h4 {
    text-align: center;
    margin-top: 3rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
+   .form {
+      margin-left: 20rem;
+   }
+   .phone-img img {
+      margin-left: 0;
+   }
+   .about-paragraph>p {
+      margin-left: 3rem;
+   }
+   .feedback-container {
+      margin-top: 0.5rem;
+   }
+   .landing-page-image img {
+      height: 750px;
+   }
+}
+/* @media screen and (max-width: 1200px) {
    .form {
       margin-left: 30rem;
    }
@@ -166,7 +183,7 @@ h4 {
    .logo {
       font-size: inherit;
    }
-}
+} */
 .footer {
    background: #27AE60;
    color: white;
@@ -233,6 +250,7 @@ h4 {
       width: 100%;
       font-size: 18px;
       padding-top: 3rem;
+      margin-left: inherit;
   }
   .Section-head{
      font-size: 32px;
